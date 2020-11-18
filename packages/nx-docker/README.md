@@ -32,6 +32,7 @@ image to these registries.
 
 <details>
   <summary><b>Show config</b></summary>
+  
   ```json
   "docker": {
     "builder": "@nx-tools/nx-docker:build",
@@ -56,16 +57,18 @@ in another step of your workflow:
 
 <details>
   <summary><b>Show config</b></summary>
-  ```json
-  "docker": {
-    "builder": "@nx-tools/nx-docker:build",
-    "options": {
-      "file": "apps/api/Dockerfile",
-      "load": true,
-      "tags": ["user/app:latest"]
-    }
+
+```json
+"docker": {
+  "builder": "@nx-tools/nx-docker:build",
+  "options": {
+    "file": "apps/api/Dockerfile",
+    "load": true,
+    "tags": ["user/app:latest"]
   }
-  ```
+}
+```
+
 </details>
 
 ### Multi-platform image
@@ -74,6 +77,7 @@ You can build your apps for multiple platform, like linux/amd64, linux/arm64, li
 
 <details>
   <summary><b>Show config</b></summary>
+  
   ```json
   "docker": {
     "builder": "@nx-tools/nx-docker:build",
@@ -98,6 +102,7 @@ Mode:
 
 <details>
   <summary><b>Show config</b></summary>
+  
   ```json
   "docker": {
     "builder": "@nx-tools/nx-docker:build",
